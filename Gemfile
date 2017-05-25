@@ -71,3 +71,4 @@ gem 'rails_admin', '~> 1.1.1'
 gem 'rails_admin_material'
 gem 'rails_admin_mydash'
 # 
+gem 'paper_trail'
