@@ -73,3 +73,4 @@ gem 'rails_admin_mydash'
 # 
 gem 'paper_trail'
 gem "devise_ldap_authenticatable", :git => "git://github.com/cschiewek/devise_ldap_authenticatable.git"
+gem 'select2-rails'
