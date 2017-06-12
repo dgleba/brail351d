@@ -45,8 +45,9 @@
                   <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">This item to be used later</a></li>
+                    <li> <%#= link_to 'Users', users_path %> </li>
+                    <li> <%= link_to "Edit profile", edit_user_registration_path %> </li>
                     <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
-                    <li> <%= link_to 'Users', users_path %> </li>
                   </ul>
                 </li>
             <% else %>
