@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
             <li>
-              <!-- <%= link_to 'Products', products_path %> -->
+              <!-- <%#  = link_to 'Products', products_path %> -->
             </li>
           </ul>
 
@@ -40,10 +40,14 @@
                <li>
                   <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
                 </li>
-                <li
-                <span class="label label-default" style="color:blue;margin-top: 15px;"><%= current_user.email %>,<%= current_user.name %></span>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= current_user.email %>,<%= current_user.name %>
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">This item to be used later</a></li>
+                    <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+                  </ul>
                 </li>
-
             <% else %>
                 <li>
                   <%= link_to('Login', new_user_session_path)  %>
