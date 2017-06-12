@@ -75,6 +75,6 @@ Rails.application.configure do
   
   #for devise.. 2016-07-22_Fri_14.52-PM David Gleba
   # https://stackoverflow.com/questions/3432712/how-to-set-the-actionmailer-default-url-optionss-host-dynamically-to-the-reque  - 2017-06-08
-  config.action_mailer.default_url_options = { :host => request.host_with_port }  
+  config.action_mailer.default_url_options = { host: 'localhost' }  
   
 end

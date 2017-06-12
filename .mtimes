@@ -1,0 +1,8 @@
+1497238725|app/views/layouts/application.html.erb
+1497236300|app/views/layouts/rail263nav.haml2erb.txt
+1496972439|app/views/layouts/z_TS/application.html_TS_2017-06-08_09;40,39.erb
+1497235767|app/views/layouts/z_TS/application.html_TS_2017-06-11_10;49,27.erb
+1497238079|app/views/layouts/z_TS/application.html_TS_2017-06-11_11;27,59.erb
+1496979196|config/environments/development.rb
+1496972439|config/puma/puma.rb
+1497238880|db/development.sqlite3
