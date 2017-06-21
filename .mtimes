@@ -5,4 +5,7 @@
 1497238079|app/views/layouts/z_TS/application.html_TS_2017-06-11_11;27,59.erb
 1496979196|config/environments/development.rb
 1496972439|config/puma/puma.rb
-1497238880|db/development.sqlite3
+1498009748|Gemfile.lock
+1498009808|app/models/ability.rb
+1498010655|db/development.sqlite3
+1498010052|db/schema.rb

@@ -14,13 +14,17 @@ class Ability
     #
 
     elsif user.lr_regular?
-      can :read, [ Product, Role, User]
-      can :read, :all
-      can [ :create, :update, :destroy, ], [ Product, ]
+      can :manage, :all
       can :access, :rails_admin
-      #can :history
       can :dashboard
-    
+      # can :read, :all
+      can [ :read, :create, :update,  ], [ Product, CountryOfOrigin, Pfeature, ProductFeature, ]
+      # can :read, [ Product, Role, User]
+      # can [ :create, :update, :destroy, ], [ Product, ]
+      cannot :history
+      cannot [:read], [ Role,User]
+      cannot [:destroy], :all
+      
     elsif user.lr_readonly?
       can :read, Role
       can :dashboard

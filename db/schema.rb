@@ -103,4 +103,17 @@ ActiveRecord::Schema.define(version: 50161230223301) do
     t.index ["transaction_id"], name: "index_versions_on_transaction_id"
   end
 
+  create_table "will_filter_filters", force: :cascade do |t|
+    t.string   "type"
+    t.string   "name"
+    t.text     "data"
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.string   "model_class_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["project_id"], name: "index_will_filter_filters_on_project_id"
+    t.index ["user_id"], name: "index_will_filter_filters_on_user_id"
+  end
+
 end
